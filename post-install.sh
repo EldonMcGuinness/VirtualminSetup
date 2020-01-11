@@ -1,5 +1,9 @@
 #/bin/bash
 
+# Set Template for VirtualHosts
+Virtualmin > System Settings > Features and Plugins
+
+
 # Replace the OVH server names in cloud config files
 /etc/cloud/cloud.cfg
 /var/lib/cloud/data/previous-hostname
@@ -10,6 +14,10 @@ wget https://curl.haxx.se/ca/cacert.pem -O /etc/ssl/cacert.pem
 
 
 # This assumes you have setup an SSL certificate with Letsencrypt for the webmin install
+
+# Set a Postfix setting for SSL
+Webmin > Servers > Postfix Mail Server > SMTP Authentication And Encryption > 
+TLS certificate authority file: /etc/webmin/letsencrypt-ca.pem	
 
 
 
