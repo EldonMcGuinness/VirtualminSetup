@@ -5,6 +5,10 @@
 /var/lib/cloud/data/previous-hostname
 /var/lib/cloud/data/set-hostname
 
+# Make sure we have the latest cacert.pem
+wget https://curl.haxx.se/ca/cacert.pem -O /etc/ssl/cacert.pem
+
+
 # This assumes you have setup an SSL certificate with Letsencrypt for the webmin install
 
 
