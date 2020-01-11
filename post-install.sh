@@ -31,3 +31,9 @@ cp -sf /etc/webmin/letsencrypt-key.pem /etc/ssl/private/ssl-cert-snakeoil.key
 
 # Enable the default site so letsencrypt can renew
 ln -sf /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/
+
+# Add ssl to the 000-default.conf
+# SSLEngine on
+# SSLCipherSuite ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP
+# SSLCertificateFile      /etc/webmin/letsencrypt-cert.pem
+# SSLCertificateKeyFile   /etc/webmin/letsencrypt-key.pem
