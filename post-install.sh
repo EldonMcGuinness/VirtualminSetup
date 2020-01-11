@@ -6,6 +6,8 @@ $HOST="f"
 # Set Template for VirtualHosts
 # Virtualmin > System Settings > Features and Plugins
 
+# Updated postfix setting to use proper domainname
+echo $HOSTNAME > /etc/mailname
 
 # Replace the OVH server names in cloud config files
 # /etc/cloud/cloud.cfg
