@@ -45,3 +45,12 @@ ln -sf /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/
 # SSLCipherSuite ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP
 # SSLCertificateFile      /etc/webmin/letsencrypt-cert.pem
 # SSLCertificateKeyFile   /etc/webmin/letsencrypt-key.pem
+
+# Replace index.html on the host with:
+#<!DOCTYPE html>
+#<html>
+#   <head>
+#      <title>Webhost001</title>
+#      <meta http-equiv = "refresh" content = "0; url = https://progressivethink$
+#   </head>
+#</html>
